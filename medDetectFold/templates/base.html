@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+
+
+	<title>Index</title>
+	<style type="text/css">
+		
+body{
+ 
+overflow-x: hidden;
+
+}
+
+.mainContainer{
+
+	width: 100%;
+	height: 1vh;
+
+}
+
+.imageContainer{
+
+	position: absolute;
+	top: -300px;
+	right: -300px;
+
+
+}
+
+.imageContainer .back{
+
+
+height: 1000px;
+width: 1000px;
+
+}
+
+
+.imageContainer .characTer{
+
+
+height: 300px;
+width: 375px;
+position: absolute;
+top: 500px;
+left: 50px;
+
+}
+
+.textContainer{
+	position: absolute;
+	left: 10%;
+	top: 15%;
+}
+
+.textContainer .headOne{
+
+	display: block;
+	font-family: Montserrat;
+	font-weight: 700;
+	letter-spacing: 5px;
+  text-rendering:optimizeLegibility;
+
+}
+
+.one{
+
+	font-size: 60px;
+	color: #9B95FF;
+	margin-bottom: 0px:
+	
+
+}
+
+.two{
+
+	margin-top: -70px;
+	font-size: 55px;
+	margin-bottom: 0px;
+
+
+}
+
+.mainText{
+
+	width: 100%;
+	font:normal normal normal 13px/25px SF Pro ;
+  text-rendering:optimizeLegibility;
+
+
+}
+
+.formHolder{
+
+	position: absolute;
+	top: 55%;
+	left: 10%;
+}
+
+.text{
+
+
+width: 275px;
+height: 50px;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 3px 5px 3px #00000029;
+border: 1px solid #70707021;
+border-radius: 40px;
+opacity: 1;
+text-indent: 30px;
+
+}
+
+.text::placeholder{
+
+text-align: left;
+font: normal normal medium 15px/19px Montserrat;
+letter-spacing: 0.75px;
+color: #000000;
+opacity: 0.30;
+text-rendering:optimizeLegibility;
+
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+background: #6C63FF;
+border-radius: 50%;
+opacity: 1;
+margin-left: 20px;
+padding: 20px 10px 20px 10px;
+}
+
+.custom-file-upload img{
+	position: relative;
+	width: 35px;
+	top: 13px;
+  left: 2px;
+
+}
+
+.logoText{
+	display: inline-block;
+	text-align: left;
+font-family: SF Pro ;
+font-size: 12px;
+letter-spacing: 1.44px;
+color: #000000;
+opacity: 0.5;
+margin-left: 20px;
+transform: translateY(-8px);
+
+
+
+}
+
+
+.logoContainer img{
+
+	height: 35px;
+	width: 45px;
+
+}
+
+
+.logoContainer{
+
+	position: absolute;
+	left: 5%;
+	top: 7%;
+}
+
+
+.imageSection{
+
+	position: absolute;
+	top: 100%;
+}
+
+
+.mainImage{
+
+height: 300px;
+width:200px;
+position: absolute;
+
+
+}
+
+.backgroundDesign{
+
+height: 500px;
+width:500px;
+position: absolute;
+z-index: -1;
+transform: translate(-140px,-20px);
+}
+
+
+.headingMain{
+
+position: relative;
+left: 50%;
+transform: translateX(-40%);
+text-align: left;
+font-family: SF Pro Display;
+letter-spacing: 0px;
+color: #000000;
+text-transform: uppercase;
+opacity: 1;
+font-size: 20px;
+
+
+
+}
+
+.originalImage{
+
+margin-left: 200px;
+
+}
+
+.mainWrapper{
+
+  margin-right: 50;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	transform: translateX(20%);
+
+
+}
+
+
+
+.statsDiv{
+
+	transform: translateY(-50px);
+	text-align: center;
+	margin-left: 200px;
+
+}
+
+.list{
+
+
+text-align: center;
+font: normal normal normal 18px/42px Helvetica;
+letter-spacing: 2.45px;
+color: #000000;
+opacity: 1;
+transform: translateX(60px);
+text-decoration: none;
+list-style-type: none;
+transform: translateX(-20px);
+}
+
+
+
+.percent{
+
+	font: normal normal bold 80px/165px SF Pro Display;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+margin-bottom: 0px;
+
+}
+
+.accurate{
+
+margin-top: -40px;
+font-family: SF Pro Display;
+font-size: 30px;
+font-weight: 800;
+letter-spacing: 2.45px;
+color: #9B95FF;
+text-transform: uppercase;
+opacity: 1;
+margin-bottom: 0px;
+
+}
+
+.primary{
+
+  background: #857EFF;
+			display: inline-block;
+			padding: 20px 25px;
+			border: none;
+			border-radius: 50px;
+			background-clip: padding-box;
+			position: relative;
+			color: #FFF;
+			//box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+			transition: all .25s;
+			margin-left: 20px;
+}
+
+		
+	</style>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+
+
+
+</head>
+
+<body>
+
+
+  {% block content %}
+  {% endblock %}
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
