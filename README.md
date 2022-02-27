@@ -29,4 +29,12 @@ This renders the data further onto our front end.
 
 ## How we built it
 
+After the user uploads their image:
+We setup an SQL server to which this image is pushed
+The database then sends this image to our Django backend
+We use OpenCv to crop the image, identify all text and colors, check for spelling errors
+This cleaned image is passed to a CNN which detects the presence of the Rx symbol
+The results of the model run are parsed into a user friendly format
+This final format is pushed to the website wherein we display an accuracy score and all parameters are displayed
+
 
