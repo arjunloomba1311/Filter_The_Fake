@@ -4,7 +4,7 @@ Important note - due to github constraints and a 100mb limit we haven't been  ab
 
 What's missing in this repo? 
 
-Weights for our ML model, some images, some external ML supporting files.  
+Weights for our ML model, some images, some external ML supporting files. 
 
 
 ## What does our App look like? 
@@ -16,3 +16,13 @@ Weights for our ML model, some images, some external ML supporting files.
 
 <img width="955" alt="Screenshot 2022-02-26 at 9 21 43 PM" src="https://user-images.githubusercontent.com/34513460/155869357-c93b4ed0-af2b-4c40-8568-19df7fe81848.png">
 
+
+## How does our Django Backend Work? - 
+
+Our settings.py file defines the overall settings of the website, gives the backend information about our front-end directory, and defines the path to our data-base. 
+
+Next, our urls.py defines the endpoints which our website must open on depending on any link that the user might click. This data is then sent to the main backend logic file - views.py. 
+
+When a POST request is created, data is taken from the form in the front end (i.e. the image) and is sent to views.py file. In our views.py file we get the data that is sent by the user and parse it if required. We then pass this data into our implement model function which first preprocesses the data and then uses the model weights to fill in some parameters i.e. alignment, Rx number presence. 
+
+This renders the data further onto our front end.
