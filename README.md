@@ -7,7 +7,7 @@ What's missing in this repo?
 Weights for our ML model, some images, some external ML supporting files.  
 
 
-#What does our App look like? 
+## What does our App look like? 
 
 <img width="911" alt="Screenshot 2022-02-26 at 9 21 52 PM" src="https://user-images.githubusercontent.com/34513460/155869354-5e37e044-b4fb-418d-bf25-1720e677a93f.png">
 
