@@ -26,3 +26,6 @@ Next, our urls.py defines the endpoints which our website must open on depending
 When a POST request is created, data is taken from the form in the front end (i.e. the image) and is sent to views.py file. In our views.py file we get the data that is sent by the user and parse it if required. We then pass this data into our implement model function which first preprocesses the data and then uses the model weights to fill in some parameters i.e. alignment, Rx number presence. 
 
 This renders the data further onto our front end.
+
+
+
